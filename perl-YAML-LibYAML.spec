@@ -4,7 +4,7 @@
 #
 Name     : perl-YAML-LibYAML
 Version  : 0.75
-Release  : 5
+Release  : 6
 URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.75.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.75.tar.gz
 Summary  : 'Perl YAML Serialization using XS and libyaml'
@@ -89,11 +89,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/YAML/LibYAML.pm
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/YAML/LibYAML.pod
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/YAML/XS.pm
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/YAML/XS.pod
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/YAML/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/YAML/LibYAML.pod
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/YAML/XS.pm
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/YAML/XS.pod
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -103,7 +103,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
+/usr/lib/perl5/vendor_perl/5.28.0/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
 
 %files license
 %defattr(0644,root,root,0755)
