@@ -4,10 +4,10 @@
 #
 Name     : perl-YAML-LibYAML
 Version  : 0.81
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.81.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.81.tar.gz
-Summary  : Perl YAML Serialization using XS and libyaml
+Summary  : 'Perl YAML Serialization using XS and libyaml'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-YAML-LibYAML-license = %{version}-%{release}
@@ -27,7 +27,6 @@ my $array = Load $yaml;
 Summary: dev components for the perl-YAML-LibYAML package.
 Group: Development
 Provides: perl-YAML-LibYAML-devel = %{version}-%{release}
-Requires: perl-YAML-LibYAML = %{version}-%{release}
 Requires: perl-YAML-LibYAML = %{version}-%{release}
 
 %description dev
@@ -104,9 +103,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/YAML/LibYAML.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/YAML/LibYAML.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/YAML/XS.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/YAML/XS.pod
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
-/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/YAML/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/YAML/LibYAML.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/YAML/XS.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/YAML/XS.pod
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.30.2/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
