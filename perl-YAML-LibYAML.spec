@@ -88,9 +88,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/YAML/LibYAML.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/YAML/LibYAML.pod
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/YAML/XS.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/YAML/XS.pod
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
-/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/YAML/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/YAML/LibYAML.pod
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/YAML/XS.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/YAML/XS.pod
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/YAML/XS/LibYAML.pm
+/usr/lib/perl5/vendor_perl/5.34.0/x86_64-linux-thread-multi/auto/YAML/XS/LibYAML/LibYAML.so
