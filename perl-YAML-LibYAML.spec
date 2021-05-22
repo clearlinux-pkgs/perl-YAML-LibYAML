@@ -4,12 +4,13 @@
 #
 Name     : perl-YAML-LibYAML
 Version  : 0.83
-Release  : 26
+Release  : 27
 URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.83.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.83.tar.gz
 Summary  : 'Perl YAML Serialization using XS and libyaml'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0 MIT
+Requires: perl-YAML-LibYAML-license = %{version}-%{release}
 Requires: perl-YAML-LibYAML-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
@@ -30,6 +31,14 @@ Requires: perl-YAML-LibYAML = %{version}-%{release}
 
 %description dev
 dev components for the perl-YAML-LibYAML package.
+
+
+%package license
+Summary: license components for the perl-YAML-LibYAML package.
+Group: Default
+
+%description license
+license components for the perl-YAML-LibYAML package.
 
 
 %package perl
@@ -67,6 +76,9 @@ make TEST_VERBOSE=1 test
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML
+cp %{_builddir}/YAML-LibYAML-0.83/LICENSE %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML/0b417bad054eeda382bcd1fb999b1f3f09a8731e
+cp %{_builddir}/YAML-LibYAML-0.83/LibYAML/License %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML/75c83b388350c9f313c608a57313314cf7767208
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -85,6 +97,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/YAML::LibYAML.3
 /usr/share/man/man3/YAML::XS.3
 /usr/share/man/man3/YAML::XS::LibYAML.3
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-YAML-LibYAML/0b417bad054eeda382bcd1fb999b1f3f09a8731e
+/usr/share/package-licenses/perl-YAML-LibYAML/75c83b388350c9f313c608a57313314cf7767208
 
 %files perl
 %defattr(-,root,root,-)
