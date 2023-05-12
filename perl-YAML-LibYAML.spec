@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-YAML-LibYAML
-Version  : 0.87
-Release  : 36
-URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/YAML-LibYAML-0.87.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/YAML-LibYAML-0.87.tar.gz
+Version  : 0.88
+Release  : 37
+URL      : https://cpan.metacpan.org/authors/id/I/IN/INGY/YAML-LibYAML-0.88.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/I/IN/INGY/YAML-LibYAML-0.88.tar.gz
 Summary  : 'Perl YAML Serialization using XS and libyaml'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0 MIT
@@ -55,10 +55,10 @@ perl components for the perl-YAML-LibYAML package.
 
 
 %prep
-%setup -q -n YAML-LibYAML-0.87
-cd %{_builddir}/YAML-LibYAML-0.87
+%setup -q -n YAML-LibYAML-0.88
+cd %{_builddir}/YAML-LibYAML-0.88
 pushd ..
-cp -a YAML-LibYAML-0.87 buildavx2
+cp -a YAML-LibYAML-0.88 buildavx2
 popd
 
 %build
