@@ -7,7 +7,7 @@
 #
 Name     : perl-YAML-LibYAML
 Version  : 0.89
-Release  : 40
+Release  : 41
 URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.89.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-0.89.tar.gz
 Summary  : 'Perl YAML Serialization using XS and libyaml'
