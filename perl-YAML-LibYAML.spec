@@ -6,13 +6,13 @@
 # autospec commit: 94c6be0
 #
 Name     : perl-YAML-LibYAML
-Version  : 0.902.0
-Release  : 45
-URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-v0.902.0.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-v0.902.0.tar.gz
+Version  : 0.903.0
+Release  : 46
+URL      : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-v0.903.0.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/T/TI/TINITA/YAML-LibYAML-v0.903.0.tar.gz
 Summary  : 'Perl YAML Serialization using XS and libyaml'
 Group    : Development/Tools
-License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0 MIT
+License  : Artistic-1.0-Perl MIT
 Requires: perl-YAML-LibYAML-license = %{version}-%{release}
 Requires: perl-YAML-LibYAML-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
@@ -57,10 +57,10 @@ perl components for the perl-YAML-LibYAML package.
 
 
 %prep
-%setup -q -n YAML-LibYAML-v0.902.0
-cd %{_builddir}/YAML-LibYAML-v0.902.0
+%setup -q -n YAML-LibYAML-v0.903.0
+cd %{_builddir}/YAML-LibYAML-v0.903.0
 pushd ..
-cp -a YAML-LibYAML-v0.902.0 buildavx2
+cp -a YAML-LibYAML-v0.903.0 buildavx2
 popd
 
 %build
@@ -86,7 +86,6 @@ make TEST_VERBOSE=1 test
 %install
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML
-cp %{_builddir}/YAML-LibYAML-v%{version}/LICENSE %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML/c12979c5089ac143f1df433d132864cbc9aa1ade || :
 cp %{_builddir}/YAML-LibYAML-v%{version}/LibYAML/License %{buildroot}/usr/share/package-licenses/perl-YAML-LibYAML/75c83b388350c9f313c608a57313314cf7767208 || :
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
@@ -111,7 +110,6 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files license
 %defattr(0644,root,root,0755)
 /usr/share/package-licenses/perl-YAML-LibYAML/75c83b388350c9f313c608a57313314cf7767208
-/usr/share/package-licenses/perl-YAML-LibYAML/c12979c5089ac143f1df433d132864cbc9aa1ade
 
 %files perl
 %defattr(-,root,root,-)
